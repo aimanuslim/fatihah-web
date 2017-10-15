@@ -18,6 +18,16 @@
 
   </head>
   <body>
+
+    <footer>
+      <script src="scripts/jquery-3.1.1.min.js" type="text/javascript"></script>
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="scripts/jquery.imagemapster.js"></script>
+      <script src="scripts/hover.js"></script>  
+      <script src="scripts/recite.js"></script>
+    </footer>
+    
     <!-- Modal -->
     <div id="feedback-modal" class="modal fade" role="dialog">
       <div class="modal-dialog modal-md">
@@ -40,10 +50,7 @@
             <div class="form-group">
               <label for="feedback-message">Feedback Message</label>
               <textarea class="form-control"  name="feedback-message" id="feedback-message" rows="10"></textarea>              
-              
-              
             </div>
-            
           </div>
           <div class="modal-footer">
             <div class="container-fluid">
@@ -52,13 +59,9 @@
               </div>
               <button type="submit" id="feedback-submit" class="btn btn-info">Submit</button>
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              
             </div>
-            
-            
           </div>
         </div>
-
       </div>
     </div>
     
@@ -110,115 +113,84 @@
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 	  </div>
 	</div>
-
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row-fluid ">
-        <nav class="navbar  navbar-fixed-top navbar-default transparent">  
-          <div class="container-fluid top-bar" >
-            <ul class="nav navbar-nav transparent">
-              <li><button type="button" class="ayat1-area mybutton">Bismillah</button></li>
-              <li><button type="button" id="" class="ayat2-area mybutton ayat-button">Ayat 2</button></li>
-              <li><button type="button" class="ayat3-area mybutton">Ayat 3</button></li>
-              <li><button type="button" class="ayat4-area mybutton">Ayat 4</button></li>
-              <li><button type="button" class="ayat5-area mybutton">Ayat 5</button></li>
-              <li><button type="button" class="ayat6-area mybutton">Ayat 6</button></li>
-              <li><button type="button" class="ayat7-area mybutton">Ayat 7</button></li>
-              
-              <li> 
-                <button type="button" 
-                        class="btn btn-success navbar-button misc-buttons"
-                        data-toggle="popover" id="share-button">Share</button>
-              </li>
-              <li>
-                <button type="button" 
-                        class="btn btn-success navbar-button misc-buttons"
-                        data-toggle="modal" data-target="#guide-modal" id="guide-button">Info</button>
-              </li>
-              <li>
-                <button type="button" 
-                        class="btn btn-success navbar-button misc-buttons"
-                        data-toggle="modal" data-target="#feedback-modal" id="feedback-button">Feedback</button>
-              </li>
-              
-              <li > <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="height: 10px">
-                <input type="hidden" name="cmd" value="_s-xclick" >
-                <input type="hidden" name="hosted_button_id" value="MCTZEXGPKVQK4">
-                <div id="donate-image">
-                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" > 
-                </div>
-                
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" >
-              </form>        
-              </li>
-            </ul>
-            
-	    
-            
-          </div>         
-        </nav>
-	
-      </div>
-      
-      <div class="row is-flex  test" >
-        <div class="col-xs-3 container-fluid test" id="fatihah-container">
-	  
-          <img src="images/fatihah.jpg"  class="img-circle" usemap="#image-map" id="fatihah"/>
+    <nav class="navbar navbar-fixed-top navbar-default transparent">  
+      <div class="container-fluid top-bar" >
+        <ul class="nav navbar-nav transparent">
+          <li><button type="button" class="ayat1-area mybutton">Bismillah</button></li>
+          <li><button type="button" id="" class="ayat2-area mybutton ayat-button">Ayat 2</button></li>
+          <li><button type="button" class="ayat3-area mybutton">Ayat 3</button></li>
+          <li><button type="button" class="ayat4-area mybutton">Ayat 4</button></li>
+          <li><button type="button" class="ayat5-area mybutton">Ayat 5</button></li>
+          <li><button type="button" class="ayat6-area mybutton">Ayat 6</button></li>
+          <li><button type="button" class="ayat7-area mybutton">Ayat 7</button></li>
+          <li> 
+            <button type="button" 
+                    class="btn btn-success navbar-button misc-buttons"
+                    data-toggle="popover" id="share-button">Share</button>
+          </li>
+          <li>
+            <button type="button" 
+                    class="btn btn-success navbar-button misc-buttons"
+                    data-toggle="modal" data-target="#guide-modal" id="guide-button">Info</button>
+          </li>
+          <li>
+            <button type="button" 
+                    class="btn btn-success navbar-button misc-buttons"
+                    data-toggle="modal" data-target="#feedback-modal" id="feedback-button">Feedback</button>
+          </li>  
+          <li > <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="height: 10px">
+            <input type="hidden" name="cmd" value="_s-xclick" >
+            <input type="hidden" name="hosted_button_id" value="MCTZEXGPKVQK4">
+            <div id="donate-image">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" > 
+            </div>
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" >
+          </form>        
+          </li>
+        </ul> 
+      </div>         
+    </nav>
 
-          <!-- main -->
-          <map name="image-map">
-            <a id="verse_1"> <area target="" id="bismillah"  class="ayat1-area" name="bismillah" coords="122,156,651,264" shape="rect" href=""></a>
-            <a id="verse_2"><area target="" id="ayat2" class="ayat2-area" name="ayat2" coords="230,293,681,392" shape="rect" href=""></a>
-            <a id="verse_3">
+    <div class="container-fluid">
+      <div class="row">
+	<div class="col-md-6 fatihah-offset">
+          <img src="images/fatihah.jpg" usemap="#image-map" class="img-circle img-responsive center-block" id="fatihah"/>
+	  <map name="image-map">
+	    <a id="verse-1"><area target="" id="bismillah"  class="ayat1-area" name="bismillah" coords="122,156,651,264" shape="rect" href=""></a>
+	    <a id="verse-2"><area target="" id="ayat2" class="ayat2-area" name="ayat2" coords="230,293,681,392" shape="rect" href=""></a>
+	    <a id="verse-3">
 	      <area target="" id="ayat3-1" class="ayat3-area" name="ayat3-1" coords="158,292,12,393" shape="rect" href="">
               <area target="" id="ayat3-2" class="ayat3-area" name="ayat3-2" coords="686,522,506,426" shape="rect" href="">
 	    </a>
-            <a id="verse_4"><area target="" id="ayat4" class="ayat4-area" name="ayat4" coords="428,428,101,527" shape="rect" href=""></a>
-            <a id="verse_5"><area target="" id="ayat5" class="ayat5-area" name="ayat5" coords="106,557,681,650" shape="rect" href=""></a>
-            <a id="verse_6"><area target="" id="ayat6" class="ayat6-area" name="ayat6" coords="247,682,685,771" shape="rect" href=""></a>
-            <a id="verse_7">
+	    <a id="verse-4"><area target="" id="ayat4" class="ayat4-area" name="ayat4" coords="428,428,101,527" shape="rect" href=""></a>
+	    <a id="verse-5"><area target="" id="ayat5" class="ayat5-area" name="ayat5" coords="106,557,681,650" shape="rect" href=""></a>
+	    <a id="verse-6"><area target="" id="ayat6" class="ayat6-area" name="ayat6" coords="247,682,685,771" shape="rect" href=""></a>
+	    <a id="verse-7">
 	      <area target="" id="ayat7-1" class="ayat7-area" name="ayat7-1" coords="19,684,172,775" shape="rect" href="">
               <area target="" id="ayat7-2" class="ayat7-area" name="ayat7-2" coords="681,800,22,919" shape="rect" href="">
               <area target="" id="ayat7-3" class="ayat7-area" name="ayat7-3" coords="214,936,567,1050" shape="rect" href="">
 	    </a>
-          </map>
-
-          <!-- sub ayats -->
-	  <!--
-               <map name="image-map">
-               <area class="subayat-2 subayat" id="alhamdu" coords="538,306,678,370" shape="rect" nohref>
-               <area class="subayat-2  subayat" id="allah" coords="486,304,535,381" shape="rect" nohref>
-               <area class="subayat-2  subayat" id="rabbi" coords="421,304,484,387" shape="rect" nohref>
-               <area class="subayat-2  subayat" id="alamin" coords="235,305,416,389" shape="rect" nohref>
-               <area class="subayat-3  subayat" id="arrahman" coords="12,307,155,390" shape="rect" nohref>
-               <area class="subayat-3  subayat" id="arraheem" coords="518,432,680,517" shape="rect" nohref>
-               <area class="subayat-4  subayat" id="malik" coords="320,436,425,515" shape="rect" nohref>
-               <area class="subayat-4  subayat" id="yaumiddeen" coords="107,430,317,519" shape="rect" nohref>
-               <area class="subayat-5  subayat" id="naabudu" coords="481,553,578,637" shape="rect" nohref>
-               <area class="subayat-5  subayat" id="nastaeen" coords="112,555,341,643" shape="rect" nohref>
-               <area class="subayat-6  subayat" id="ihdina" coords="585,682,680,773" shape="rect" nohref>
-               <area class="subayat-6  subayat" id="siraat" coords="440,684,579,773" shape="rect" nohref>
-               <area class="subayat-6  subayat" id="almustaqeem" coords="247,684,437,772" shape="rect" nohref>
-               <area class="subayat-7  subayat" id="anaamtaalaihim" coords="303,806,543,918" shape="rect" nohref >
-               <area class="subayat-7  subayat" id="maghdoob" coords="25,811,232,905  subayat" shape="rect" nohref>
-               <area class="subayat-7  subayat" id="dhalleen" coords="220,939,393,1027" shape="rect" nohref >
-               </map>
-	     -->
-
-          
-          
-        </div>
-
+	  </map>
+	</div>
 	
-
-        <div class="col-xs-9 container test pagination-center" id="show-area">
-          
-          <div class="panel panel-default" id="main-tafsir-section">
-            <div class="panel-heading">Ayat Tafseer</div>
-            <div class="panel-body panel-content">
-              <div  class="contents" id="ayat1-text" style="display:none">
+        <div class="col-md-6" id="main-tafsir-section">        
+          <div class="panel panel-default">
+            <div class="panel-heading">
+	      Ayat Tafseer
+	      <span id="text-changer">
+                <button type="button" class="btn btn-default change-button" id="increase-size">
+		  <span class="glyphicon glyphicon-plus"></span>
+		</button>
+		<button type="button" class="btn btn-default change-button" id="decrease-size">
+		  <span class="glyphicon glyphicon-minus"></span>
+		</button>
+	      </span>
+	    </div>
+	    <div class="panel-body panel-content">
+              <div class="contents" id="ayat1-text" style="display:none">
                 <h2>Background</h2>
 		<ol type="1">
 		  <li value="1">First complete surah given to Rasulullah&nbsp;ﷺ.</li>
@@ -232,7 +204,7 @@
 		</ol>
                 
               </div>
-              <div  class="contents"  id="ayat2-text" style="display:none">
+              <div class="contents" id="ayat2-text" style="display:none">
                 <ol>
 		  <li>
 		    <h1>الحمدلله</h1>
@@ -377,7 +349,7 @@
 		  </ol>
 		</ol>
               </div>
-              <div  class="contents"  id="ayat3-text" style="display:none">
+              <div class="contents" id="ayat3-text" style="display:none">
                 <h1><span>الرَّحْمَـٰنِ الرَّحِيمِ</span></h1>
 		<ol style="list-style-type: upper-alpha;" type="a">
 		  <li>Both word means:</li>
@@ -708,74 +680,16 @@
 
               
             </div>
-            <div class="panel-footer">
-              
-              <span id="text-changer">
-                <button type="button" class="btn btn-default change-button" id="increase-size"><span class="glyphicon glyphicon-plus"></span></button><span id="text-changer-label">Font Size</span>
-                <button type="button" class="btn btn-default change-button" id="decrease-size"><span class="glyphicon glyphicon-minus"></span></button>
-              </span>
-            </div>
-
-            
-          </div>
-
-          
-	  <!--
-               <div class="row">
-               <div class="col-xs-6">
-               <div class="panel panel-default" id="sub-ayat-elab-section">
-               <div class="panel-heading">Ayat by Ayat Tafseer</div>
-               <div class="panel-body panel-content">
-               Cras gravida nisi vel tellus posuere pretium. Sed elementum dui vel luctus placerat. Duis nec consectetur massa, non ornare est. Fusce varius semper quam, sit amet scelerisque nibh mattis bibendum. Donec egestas mollis erat nec congue. Phasellus fringilla, dui non ullamcorper dapibus, diam enim laoreet nunc, non efficitur nulla arcu sed mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst. Aenean facilisis, quam eget laoreet eleifend, ante ligula dapibus diam, sed porta ex quam eu augue. Nulla vestibulum, velit vitae convallis volutpat, metus dolor accumsan velit, non convallis ipsum urna vel risus.
-               </div>
-               
-               </div>
-
-               
-               
-
-               </div>
-	     -->
-          
-	  <!--
-               <div class="col-xs-6">
-               <div class="panel panel-default" id="media">
-               <div class="panel-heading panel-heading-custom">Media</div>
-
-               <div class="panel-body panel-content">
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/_plCf30bWms?start=20&end=34" frameborder="0" allowfullscreen></iframe>
-               </div>
-               </div>
-               </div>
-	     -->
-          
-          
-          
+            <!-- <div class="panel-footer">
+		 <span id="text-changer">
+                 <button type="button" class="btn btn-default change-button" id="increase-size"><span class="glyphicon glyphicon-plus"></span></button><span id="text-changer-label">Font Size</span>
+                 <button type="button" class="btn btn-default change-button" id="decrease-size"><span class="glyphicon glyphicon-minus"></span></button>
+		 </span>
+		 </div> -->
+          </div>    
         </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
       </div>
     </div>
     </div>
-    
-    
-    <script src="scripts/jquery-3.1.1.min.js" type="text/javascript"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- <script src="scripts/jquery.maphilight.js"></script> -->
-    <script src="scripts/jquery.imagemapster.js"></script>
-    <script src="scripts/hover.js"></script>  
-    <!-- <script src="scripts/imageMapResizer.min.js"></script> -->
-    
   </body>
-  <footer>
-    <script src="scripts/recite.js"></script>
-  </footer>
 </html>

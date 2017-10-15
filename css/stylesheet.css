@@ -1,43 +1,78 @@
+body {
+    padding-top: 70px;
+    background-attachment: fixed;
+    background: url(../images/background.jpg) no-repeat center center fixed;
+    background-size: cover;;
+}
+
+.fatihah-offset {
+    padding-left: 70px;
+}
+
 #fatihah {
     max-width:848px;
-    max-height:1274px;
-    height: 90vh;  
-
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
+    max-height:1274px;      
+    height: 85vh;
+    border: 3px #7FBCEA solid;
+    border-radius: 10px;
 }
 
-
-#fatihah-container {
-    margin-top: 12vh;
-    
+#main-tafsir-section {
+    padding-right: 5vw;
+    height: 85vh;
 }
 
+#main-tafsir-section .panel-default {
+    background-color: rgba(255,255,255,0.95) !important;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #7FBCEA;
+    border-width: 3px;
+    height: 100%;
+}
+
+#main-tafsir-section .panel-body {
+    height: 73vh;
+    max-height: 85vh;
+    overflow-y: scroll;
+}
+
+#main-tafsir-section .panel-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+@media only screen and (max-width: 992px) {
+    .fatihah-offset {
+	margin: auto;
+	width: 50%;
+    }
+    #main-tafsir-section {
+	padding: 20px 5vw;
+	max-height: 65vh;
+    }
+    #main-tafsir-section .panel-body {
+	max-height: 50vh;
+    }
+}
 
 #success-alert {
     width: 50px;
     display: none;
     margin-right: 20px;
-    
 }
 
 .contents {
-/*    max-height: 200px;*/
     max-height: 100%;
 }
-
 
 #donate-image {
     margin-top: 25px;
     margin-left: 15px;
     height: 2px;
 }
-
-
-
 
 .img-circle {
     border-radius: 10px;
@@ -47,11 +82,9 @@
 }
 
 .navbar-nav {
-  float: none;
-  text-align: center;
-  padding-bottom: 10px;
-/*    height: 3px;*/
-    
+    float: none;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .transparent {
@@ -63,8 +96,6 @@
 .top-bar {
     background-color: rgba(255, 255, 255, 0.6);
     border: 0px solid  #c9ff72 !important;
-/*    border-radius: 10px !important;*/
-    
 }
 
 .navbar-default {
@@ -72,57 +103,8 @@
 }
 
 .navbar-nav li {
-  float: none;
-  display: inline-block;
- 
-  
-}
-
-.panel-heading {
-    /*background: #005A04 !important; color: #fff;*/
-    border-radius: 5px;
-    border-top: 3px solid #7FBCEA;
-    border-left: 3px solid #7FBCEA;
-    border-right: 3px solid #7FBCEA;
-  
-} 
-
-
-.panel-default {
-    /*background: #CCFFBB !important; color: #fff; */
-    background-color: rgba(255,255,255,0.95) !important;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: #7FBCEA;
-    border-width: 3px;
-    height: 100%;
-/*    margin-top: 8px;*/
-}
-
-.panel-body {
-    max-height: 88%;
-    overflow-y: auto;
-}
-
-.panel {
-    /*border-radius: 15px !important;    */
-}
-
-.panel-footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
-
-#feedback-input {
-  
-}
-
-.form-group {
-/*    margin-top: 15px;*/
-    
-    
+    float: none;
+    display: inline-block;
 }
 
 .form-control {
@@ -131,23 +113,20 @@
 
 #text-changer {
     float: right;
+    margin-top: -7px;
 }
 
 #text-changer-label {
     margin-left: 5px;
 }
 
-
 #top-nav {
     margin-top: 20px;
 }
 
-
 #icon-container {
     width: 400px;
 }
-
-
 
 .misc-buttons {
     margin-left: 10px;
@@ -155,29 +134,9 @@
 }
 
 #show-area {
-    /*this makes it fill the whole right area beside image*/
-/*
-    float: none;
-    display: table-cell;
-*/
     width: 95vh;
     margin-top: 12vh;
-
-/*    margin-left: 20px;*/
-    
-   
 }
-
-
-body {
-    background-attachment: fixed;
-    background: url(../images/background.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;;
-}
-
 
 div.col-md-2 {
     height: 100vh;
@@ -187,47 +146,21 @@ div.col-md-2 {
     margin: 0 auto;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    
-/*    margin-left: 200px;*/
     width: 424px;
 }
 
 p {
-	height: 100%;
+    height: 100%;
 }
 
 .button-container {
     display: block;
 }
 
-#main-tafsir-section {
-/*    margin-top: 10vh;*/
-/*    min-height: 40vh;*/
-/*    height: inherit;*/
-
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-   
-    
-/*    width: auto;*/
-    
-}
-
-
 div.popover-content {
     width: auto;
     height: 60px;
 }
-
-.panel-content {
-/*    max-height: 30vh;    */
-   
-}
-
-
 
 .share-icon {
     float: left;
@@ -236,54 +169,39 @@ div.popover-content {
     margin-right: 10px;
 }
 
-
-
 .btn-group {
     // center
-  position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
-
-
-
-
 
 #sub-ayat-elab-section {
-/*    margin-bottom: 50px;*/
     min-height: 40vh;
-    display: none;
-    
-    
+    display: none;    
 }
-
 
 #media {
     min-height: 40vh;
     display: none;
 }
 
-
-.test {
-/*    border: 4px dashed;*/
-}
-
-
 .row.is-flex {
     display: flex;
     flex-wrap: wrap;
 }
+
 .row.is-flex > [class*='col-'] {
     display: flex;
     flex-direction: column;
 }
 
 /*
-* And with max cross-browser enabled.
-* Nobody should ever write this by hand. 
-* Use a preprocesser with autoprefixing.
-*/
+ * And with max cross-browser enabled.
+ * Nobody should ever write this by hand. 
+ * Use a preprocesser with autoprefixing.
+ */
 .row.is-flex {
     display: -webkit-box;
     display: -webkit-flex;
@@ -323,8 +241,8 @@ div.popover-content {
     color: #ffffff;
     text-decoration: none;
 }
-.mybutton:hover,
-.mybutton:focus {
+
+.mybutton:hover, .mybutton:focus {
     border: 1px solid ##01bde9;
     background: #01ffff;
     background: -webkit-gradient(linear, left top, left bottom, from(#01ffff), to(#01b5df));
@@ -333,6 +251,7 @@ div.popover-content {
     color: #ffffff;
     text-decoration: none;
 }
+
 .mybutton:active {
     background: #0197ba;
     background: -webkit-gradient(linear, left top, left bottom, from(#0197ba), to(#0197ba));
